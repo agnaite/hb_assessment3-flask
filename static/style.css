@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  width: 55%;
+  margin: 0 auto;
+  font-family: 'Helvetica', sans-serif;
+  color: #2c3e50;
+}
+
+h1 {
+  padding-top: 20px; 
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 200px;
+  font-family: 'Helvetica', sans-serif;
+  color: #2c3e50;
+  line-height: 1.5;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px;
+  border: 1px solid #2c3e50;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+form {
+  padding-right: 100px;
+  margin: 100px auto;
+  text-align: right;
+  width: 60%;
+}
+
+label {
+  margin: 0 10px 30px 0;
+  font-size: 18px;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 250px;
+  font-size: 16px;
+  background-color: #f1c40f;
+  border: 1px solid #2c3e50;
+  border-radius: 4px;
+  color: #2c3e50;
+}
+
+input[name="last_name"] {
+  font-weight: 700;
+}
+
+select {
+  margin: 0 0 10px 10px;
+  width: 260px;
+  border: 1px solid #2c3e50;
+  font-size: 18px;
+  background-color: #f1c40f;
+  color: #2c3e50;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  width: 400px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: white;
+}

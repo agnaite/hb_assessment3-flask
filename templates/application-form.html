@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %} Application Form {% endblock %}
+
+{% block content %}
+  <h1>Application Form</h1>
+  <p>Please enter your information below.</p>
+
+  <form action="/application" method="POST">
+    <label for="first_name">First name: </label>
+    <input type="text" name="first_name" id="first_name"><br>
+
+    <label for="last_name">Last name: </label>
+    <input type="text" name="last_name" id="last_name"><br>
+
+    <label for="salary">Salary requirement: </label>
+    <input type="number" pattern="^\d+(\.|\,)\d{2}$" 
+           name="salary" id="salary"><br>
+
+    <label for="job">Job: </label>
+    <select name="job" id="job">
+      <option value="Software Engineer">Software Engineer</option>
+      <option value="QA Engineer">QA Engineer</option>
+      <option value="Product Manager">Product Manager</option>
+    </select><br>
+
+    <input class="submit-btn" type="submit" 
+           name="submit" value="Submit Application">
+  </form>
+{% endblock %}
