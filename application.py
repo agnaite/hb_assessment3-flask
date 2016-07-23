@@ -1,10 +1,6 @@
 from flask import Flask, render_template, request
 # from flask_debugtoolbar import DebugToolbarExtension
-
-
 app = Flask(__name__)
-
-
 # Required to use Flask sessions and the debug toolbar
 app.secret_key = "ABC"
 
@@ -47,4 +43,4 @@ if __name__ == "__main__":
     # Use the DebugToolbar
     # DebugToolbarExtension(app)
 
-    app.run(host="0.0.0.0", port=6969)
+    app.run(host="0.0.0.0")
